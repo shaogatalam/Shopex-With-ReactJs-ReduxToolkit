@@ -1,0 +1,81 @@
+/*Combined*/
+.timeline-container,
+.timeline-container li {
+	position: relative;
+}
+
+.timeline-container:after,
+.timeline-container li:before,
+.timeline-container li > div:before,
+.timeline-container li:first-child div:after,
+.timeline-container li:last-child div:after {
+	content: '';
+	position: absolute;
+}
+
+/* color */
+.timeline-container li > div,
+.timeline-container li:before,
+.timeline-container li > div:before,
+.timeline-container:after {
+	background-color: #00c4cc;
+}
+
+.timeline-container li small,
+.timeline-container li > div:before {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*clearfix*/
+.timeline-container li:after {
+	clear: both;
+	content:'';
+	display: table;
+}
+
+.timeline-container li:last-child div:after {
+	top: auto;
+	bottom: 0;
+}
+
+
+
+/* Horizontal line */
+.timeline-container li > div:before {
+	height: 2px;
+    right: 85%;
+    width: 7.7%;
+    top: 53%;
+}
+
+/* Square */
+.timeline-container li:before {
+	height: 14px;
+    width: 14px;
+    z-index: 999;
+    left: 6.7%;
+    top: 50.98%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+}
+
+
+/* Main vertical line middile */
+.timeline-container:after {
+    bottom: 10%;
+    height: auto;
+    left: 6.5%;
+    top: 2%;
+    width: 2px;
+}
+
+
+/*timeline content*/
+.timeline-container li > div {
+	color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    float: right;
+    width: 85%;
+}

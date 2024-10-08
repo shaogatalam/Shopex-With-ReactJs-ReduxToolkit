@@ -1,0 +1,16 @@
+.MuiTablePagination-displayedRows {
+  display: none;
+}
+
+.Mui-disabled{
+    display: none;
+}
+
+.MuiTablePagination-select{
+  display: none;
+}
+
+
+.MuiInputBase-input{
+  display: none;
+}

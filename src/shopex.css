@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "sans-serif";
+}
+
+.MuiGrid-container {
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #edf2f9;
+  min-height: calc(100vh + 24px);
+  overflow-x: hidden !important;
+}
+.wrapper::before {
+  content: "";
+  min-height: 290px;
+  width: 100%;
+  background: rgb(5, 150, 105);
+  position: absolute;
+}
+
+aside {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #fff;
+  max-width: 15.625rem !important;
+  overflow-y: auto;
+  padding: 0;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+  z-index: 9999;
+  transition: all 0.2s ease-in-out;
+  left: 0;
+}
+aside .logo {
+  padding: 1.8rem 2rem 0.5rem;
+  max-width: 164px;
+  margin-left: 0rem;
+}
+aside .nav-list, aside .nav-list a {
+  color: #67748e !important;
+  font-weight: 500;
+}
+aside .nav-list a {
+  text-decoration: none;
+  display: flex;
+}
+aside .nav-list .MuiListItemButton-root {
+  padding: 2px 15px;
+}
+aside .nav-list > .MuiButtonBase-root, aside .nav-list a > .MuiButtonBase-root {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0 0px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  width: -webkit-fill-available !important;
+}
+aside .nav-list > .MuiButtonBase-root:hover, aside .nav-list a > .MuiButtonBase-root:hover {
+  border: 1px solid rgba(0, 0, 0, 0.03) !important;
+  background: rgb(249, 250, 253);
+}
+aside .nav-list > .MuiButtonBase-root .MuiListItemText-root + svg, aside .nav-list a > .MuiButtonBase-root .MuiListItemText-root + svg {
+  font-size: 1.2rem;
+}
+aside .nav-list > .MuiButtonBase-root.Mui-selected, aside .nav-list a > .MuiButtonBase-root.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+aside .MuiCollapse-vertical .MuiListItemButton-root {
+  margin-left: 14% !important;
+  opacity: 0.75;
+  justify-content: start !important;
+}
+aside .MuiCollapse-vertical .MuiListItemButton-root a {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+aside .MuiCollapse-vertical .MuiListItemButton-root a svg {
+  margin-right: 0.8rem;
+}
+aside .MuiCollapse-vertical .MuiListItemButton-root:hover {
+  background-color: transparent;
+  color: #5e72e4;
+}
+aside .MuiCollapse-vertical .MuiListItemIcon-root {
+  display: none;
+}
+aside hr {
+  background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4), transparent);
+  border-top: 0;
+  height: 1px;
+  border: 0;
+  opacity: 0.25;
+}
+aside .css-cveggr-MuiListItemIcon-root {
+  min-width: 35px;
+}
+
+.space-between, .dashboard .dash-card.key-note, .dashboard .notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard {
+  position: relative;
+  padding-left: 300px;
+}
+.dashboard .top-wrap {
+  padding-bottom: 24px;
+}
+.dashboard .notifications {
+  position: fixed;
+  border: 0.1px dashed lightgrey;
+  width: 79.4vw;
+  border-radius: 4px;
+  z-index: 999;
+  color: #fff;
+  color: black;
+  background: white;
+  padding: 16px;
+  transition: padding 0.1s;
+}
+.dashboard .notifications svg {
+  margin: 0 0 -7px 0.5rem;
+  cursor: pointer;
+}
+.dashboard .notifications.topper {
+  box-shadow: 0 2px 26px 0 rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  background: #fff;
+  color: #344767;
+}
+.dashboard .MuiTimeline-positionRight {
+  min-height: 200px;
+}
+.dashboard .css-1mbunh-MuiPaper-root {
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 0;
+}
+.dashboard .date-period .rs-picker-toggle-value {
+  font-size: 12px;
+  font-weight: 500;
+}
+.dashboard .date-period .rs-picker {
+  padding-right: 0.8rem;
+}
+.dashboard .date-period .MuiSvgIcon-root {
+  fill: rgb(157, 169, 187);
+}
+.dashboard .dash-card {
+  border-radius: 6px;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+  overflow: hidden;
+  padding: 15px 20px 15px;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard .dash-card.price strong {
+  min-width: 180px;
+}
+.dashboard .dash-card.key-note h6 {
+  color: #67748e;
+  font-weight: 500;
+}
+.dashboard .dash-card.key-note h4 {
+  color: #344767;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+.dashboard .dash-card.key-note p span {
+  color: rgb(43, 206, 161);
+  padding-right: 5px;
+  font-weight: 600;
+}
+.dashboard .dash-card.key-note svg {
+  background: seagreen;
+  color: #fff;
+  width: 60px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.dashboard .dash-card h6 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+.dashboard .dash-card .rs-timeline {
+  background: rgb(249, 250, 253);
+  border: 1px solid #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-top: auto;
+  min-height: 140px;
+}
+.dashboard .dash-card table th {
+  text-align: center;
+  background: rgb(249, 250, 253);
+  font-size: 13px;
+  color: rgb(157, 169, 187);
+  padding: 2px 2px 2px 22px;
+  height: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+}
+.dashboard .dash-card table td {
+  font-weight: 500;
+  border-bottom: 1px dashed #f1f1f1 !important;
+  font-family: "Montserrat", sans-serif !important;
+  overflow: hidden;
+  height: 40px;
+  color: #67748e !important;
+}
+.dashboard .dash-card table tr:last-child td {
+  border-bottom: none !important;
+}
+.dashboard .dash-card table .Component-paginationToolbar-2 {
+  min-height: unset !important;
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+.dashboard .dash-card table .Component-paginationToolbar-2 .MTablePaginationInner-root-14 button {
+  padding: 0;
+  color: #67748e;
+  opacity: 0.25;
+}
+.dashboard .dash-card .css-1laqsz7-MuiInputAdornment-root {
+  max-height: 0;
+}
+.dashboard .dash-card .css-v4u5dn-MuiInputBase-root-MuiInput-root {
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  padding-left: 8px;
+  max-width: 150px;
+  margin-bottom: -5px;
+  max-height: 28px;
+}
+.dashboard .dash-card .css-v4u5dn-MuiInputBase-root-MuiInput-root [aria-label=clear] {
+  display: none;
+}
+.dashboard .dash-card .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+  border: none;
+}
+.dashboard .css-hyum1k-MuiToolbar-root {
+  padding: 0 !important;
+  min-height: 0;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.dashboard .css-hyum1k-MuiToolbar-root + div {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgb(237, 242, 249);
+}
+.dashboard .period-btn {
+  background: rgb(43, 206, 161);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  margin-left: 1rem;
+  margin-left: 1rem;
+  padding: 8px 20px;
+}
+.dashboard .pediod-seg {
+  display: inline-block;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+.dashboard canvas {
+  margin-bottom: 1rem;
+}
+.dashboard .multiSelectContainer {
+  background-color: #fff;
+  border-radius: 6px;
+}
+.dashboard .multiSelectContainer .chip {
+  background: #ddd;
+  border-radius: 50px;
+  color: #67748e;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.dashboard .multiSelectContainer .chip img {
+  margin-left: 10px;
+}
+.dashboard .multiSelectContainer .searchWrapper {
+  border: none;
+  padding: 8px 16px;
+  min-height: 50px;
+}
+.dashboard .multiSelectContainer input {
+  margin-top: 0;
+}
+.dashboard .input-filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.dashboard .input-filters strong {
+  min-width: 130px;
+}
+.dashboard .input-filters input,
+.dashboard .input-filters .multi {
+  margin-right: 1rem;
+  min-width: 172px;
+}
+.dashboard .input-filters .rs-radio-group-default {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+}
+.dashboard .input-filters .searchWrapper {
+  background: #eee;
+}
+.dashboard input,
+.dashboard textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.dashboard input[placeholder=Search] {
+  margin: 0 !important;
+  border: none !important;
+}
+.dashboard form.dash-card {
+  margin-top: 1rem;
+  height: unset;
+  overflow: unset;
+}
+.dashboard form.dash-card [type=submit] {
+  max-width: 500px;
+}
+.dashboard form.dash-card [type=submit]:hover {
+  opacity: 0.9;
+}
+.dashboard form.dash-card:empty {
+  display: none;
+}
+.dashboard .campaign form label {
+  min-width: 180px;
+  display: inline-block;
+  color: #fff;
+}
+.dashboard .pricing form label {
+  margin: 0 1rem;
+}
+.dashboard .timeline {
+  padding: 0;
+}
+.dashboard .timeline .MuiTimelineItem-root::before {
+  display: none;
+}
+.dashboard .timeline .tml-title-icon {
+  position: relative;
+  background-color: #5e72e4;
+}
+.dashboard .timeline .tml-title-icon span {
+  position: absolute;
+  left: 3.5rem;
+  color: #5e72e4;
+  width: 500px;
+  line-height: 1.8rem;
+  font-weight: 600;
+}
+.dashboard .timeline .tml-title-icon svg {
+  padding: 2px;
+}
+.dashboard .timeline .MuiTimelineConnector-root {
+  background-color: #5e72e4;
+  width: 1px;
+}
+.dashboard .timeline .tml-chart canvas {
+  padding-top: 2rem;
+  max-height: 500px;
+}
+.dashboard .profile .tabs {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 6px;
+  margin-top: 1rem;
+}
+.dashboard .profile .tabs button {
+  background-color: #edf2f9;
+  color: #67748e;
+  font-weight: 600;
+  margin: 0 5px;
+  padding: 4px 10px;
+  text-transform: capitalize;
+}
+.dashboard .profile .tabs button.active {
+  background-color: rgb(43, 206, 161);
+  color: #fff;
+}
+.dashboard .profile .overlay {
+  background: #fff;
+  border-radius: 6px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+.dashboard .profile .overlay input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 0.5rem;
+}
+.dashboard .profile .overlay .send-mail {
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  padding: 6px 20px;
+  border-radius: 4px;
+  background: rgb(222, 40, 104);
+  color: #fff;
+}
+.dashboard .profile .overlay .mail-list {
+  padding: 0;
+  margin-top: 0.5rem;
+  list-style: inside decimal;
+}
+.dashboard .profile .overlay .mail-list li {
+  padding: 1rem;
+}
+.dashboard .profile .overlay .mail-list li:nth-child(odd) {
+  background-color: rgba(25, 118, 210, 0.09);
+  border-radius: 4px;
+}
+
+@media (max-width: 1199.99px) {
+  .wrapper::before {
+    min-height: 500px;
+  }
+  .aside {
+    transition: left 0.2s;
+    display: none;
+  }
+  .aside.active {
+    left: 0;
+  }
+  .sidenavToggleButton {
+    display: block;
+  }
+  .dashboard {
+    padding-left: 24px;
+  }
+  .dashboard .navbutton {
+    display: inline-block !important;
+  }
+  .dashboard .notifications {
+    width: 79.4vw;
+    color: black;
+    background: white;
+    padding: 16px;
+  }
+}/*# sourceMappingURL=shopex.css.map */

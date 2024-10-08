@@ -1,0 +1,10 @@
+
+
+    /* Each column containing 5 divs stacked using Flexbox */
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally in each column */
+    }
+
+    /* Individual div styling */
