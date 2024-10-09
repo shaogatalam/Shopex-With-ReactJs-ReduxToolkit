@@ -1,5 +1,6 @@
 {
-  "name": "shopex",
+  "homepage": "https://shaogatalam.github.io/Shopex-With-ReactJs-ReduxToolkit"
+   "name": "shopex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
